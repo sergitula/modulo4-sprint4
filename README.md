@@ -24,3 +24,7 @@ pnpm run dev
 * usePersonajes: Centraliza toda la lógica de consumo de la API (vía Axios). Maneja las variables de paginación, diferencia entre errores y devuelve las funciones para cambiar de página.
 
 * useFavoritos: Encapsula la lógica de negocio de los favoritos (agregar, alternar, verificar si existe) y lo sincroniza automáticamente con el localStorage del navegador.
+
+## Que genere con IA
+
+Usé Gemini como tutor interactivo. Yo armé la estructura base, el maquetado, los servicios de la API y los contextos. Utilicé la IA para refactorizar la lógica de paginación (bloqueando botones matemáticamente), solucionar problemas y organizar las carpetas de forma correcta.
