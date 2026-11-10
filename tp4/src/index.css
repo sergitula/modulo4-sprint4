@@ -1,1 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap');
 @import "tailwindcss";
+
+:root {
+    --color-background: #0d1017;
+    --color-on-background: #e4e1ed;
+    --color-surface: #13131b;
+    --color-surface-container-low: #181a24;
+    --color-surface-container: #1f222e;
+    --color-surface-container-high: #292c3a;
+    --color-on-surface: #e4e1ed;
+    --color-primary: #dbfcff;
+    --color-on-primary: #00363a;
+    --color-primary-container: #00f0ff;
+    /* Cian Neón */
+    --color-on-primary-container: #006970;
+    --color-portal-green: #39ff14;
+    /* Verde Portal Neón */
+    --color-secondary-container: #ff506e;
+    /* Rosa Neón */
+    --color-on-secondary-container: #5b0018;
+    --color-outline: #849495;
+    --font-display: "Sora", sans-serif;
+    --font-body: "Hanken Grotesk", sans-serif;
+    --font-label: "JetBrains Mono", monospace;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+.bg-grid {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.glow-primary {
+    box-shadow: 0 0 15px var(--color-primary-container);
+}
+
+.glow-portal {
+    box-shadow: 0 0 18px rgba(57, 255, 20, 0.45);
+}
+
+.glow-secondary {
+    box-shadow: 0 0 15px var(--color-secondary-container);
+}
